@@ -1,0 +1,16 @@
+{
+	"name": "practicedatafactory2026",
+	"properties": {
+		"trustModeClaimForMi": {
+			"value": "Disabled",
+			"editable": true,
+			"isExplicitlySet": false
+		}
+	},
+	"location": "eastasia",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "0a00e61c-ff56-47ae-8168-71692b7babdc",
+		"tenantId": "93c29016-f641-427e-9173-549a18f59df7"
+	}
+}

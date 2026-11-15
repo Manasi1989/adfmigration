@@ -1,0 +1,19 @@
+{
+	"name": "DS_BULK_PARQUET",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_BULK_PARQUET",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
