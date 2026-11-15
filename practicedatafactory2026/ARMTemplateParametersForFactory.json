@@ -1,0 +1,90 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "practicedatafactory2026"
+		},
+		"ADLS_SQL_PARQUET_password": {
+			"value": ""
+		},
+		"LS_BULKOUTPUT_accountKey": {
+			"value": ""
+		},
+		"LS_BULK_PARQUET_accountKey": {
+			"value": ""
+		},
+		"LS_CSVBULK_accountKey": {
+			"value": ""
+		},
+		"LS_EVENTFILES_accountKey": {
+			"value": ""
+		},
+		"LS_MANUALFILE_PARQUET_accountKey": {
+			"value": ""
+		},
+		"LS_SQL_MIGRATION_password": {
+			"value": ""
+		},
+		"SqlServer1_password": {
+			"value": ""
+		},
+		"SqlServer2_password": {
+			"value": ""
+		},
+		"ADLS_SQL_PARQUET_properties_typeProperties_server": {
+			"value": "DESKTOP-UU85IL7\\SQLEXPRESS"
+		},
+		"ADLS_SQL_PARQUET_properties_typeProperties_database": {
+			"value": "Sqlmigration"
+		},
+		"ADLS_SQL_PARQUET_properties_typeProperties_userName": {
+			"value": "Manasi"
+		},
+		"LS_BULKOUTPUT_properties_typeProperties_url": {
+			"value": "https://adlsdevcsvouttrigger1989.dfs.core.windows.net/"
+		},
+		"LS_BULK_PARQUET_properties_typeProperties_url": {
+			"value": "https://adlsdevcsvouttrigger1989.dfs.core.windows.net/"
+		},
+		"LS_CSVBULK_properties_typeProperties_url": {
+			"value": "https://adlsdevcsvtrigger1989.dfs.core.windows.net/"
+		},
+		"LS_EVENTFILES_properties_typeProperties_url": {
+			"value": "https://adlsdevcsvtrigger1989.dfs.core.windows.net/"
+		},
+		"LS_MANUALFILE_PARQUET_properties_typeProperties_url": {
+			"value": "https://adlsdevcsvouttrigger1989.dfs.core.windows.net/"
+		},
+		"LS_SQL_MIGRATION_properties_typeProperties_server": {
+			"value": "DESKTOP-UU85IL7\\SQLEXPRESS"
+		},
+		"LS_SQL_MIGRATION_properties_typeProperties_database": {
+			"value": "sqlmigration"
+		},
+		"LS_SQL_MIGRATION_properties_typeProperties_userName": {
+			"value": "Manasi"
+		},
+		"SqlServer1_properties_typeProperties_server": {
+			"value": "-"
+		},
+		"SqlServer1_properties_typeProperties_database": {
+			"value": "Sql Migration"
+		},
+		"SqlServer1_properties_typeProperties_userName": {
+			"value": "Man - admin"
+		},
+		"SqlServer2_properties_typeProperties_server": {
+			"value": "DESKTOP-UU85IL7\\SQLEXPRESS"
+		},
+		"SqlServer2_properties_typeProperties_database": {
+			"value": "Sql_Test"
+		},
+		"SqlServer2_properties_typeProperties_userName": {
+			"value": "man_Sql"
+		},
+		"EVENTTRIGGER_MANUALFILES_properties_typeProperties_scope": {
+			"value": "/subscriptions/be8307e2-f2ae-4452-b7b6-002736b921d5/resourceGroups/rg_devmanproject/providers/Microsoft.Storage/storageAccounts/adlsdevcsvtrigger1989"
+		}
+	}
+}
