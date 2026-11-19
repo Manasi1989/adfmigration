@@ -2,21 +2,21 @@
 	"name": "DS_LKUP_MAX_VALUE",
 	"properties": {
 		"linkedServiceName": {
-			"referenceName": "LS_LKUP_MAX_VALUE",
+			"referenceName": "LS_Parent_SqlServer_DW",
 			"type": "LinkedServiceReference"
-		},
-		"parameters": {
-			"schemaname": {
-				"type": "string",
-				"defaultValue": "@pipeline().parameters.TableSchema"
-			},
-			"tablename": {
-				"type": "string",
-				"defaultValue": "@pipeline().parameters.TableName"
-			}
 		},
 		"annotations": [],
 		"type": "SqlServerTable",
-		"schema": []
+		"schema": [],
+		"typeProperties": {
+			"schema": {
+				"value": "@dataset().schemaname",
+				"type": "Expression"
+			},
+			"table": {
+				"value": "@dataset().tablename",
+				"type": "Expression"
+			}
+		}
 	}
 }
