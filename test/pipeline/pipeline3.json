@@ -3,7 +3,7 @@
 	"properties": {
 		"activities": [
 			{
-				"name": "Execute Pipeline1",
+				"name": "EXEC_SQL_INCREMENTAL",
 				"type": "ExecutePipeline",
 				"dependsOn": [],
 				"policy": {
@@ -11,7 +11,17 @@
 				},
 				"userProperties": [],
 				"typeProperties": {
-					"waitOnCompletion": true
+					"pipeline": {
+						"referenceName": "Child Pipeline Incremental",
+						"type": "PipelineReference"
+					},
+					"waitOnCompletion": true,
+					"parameters": {
+						"TableSchema": "@item().TableSchema",
+						"TableName": "@item().TableName",
+						"WatermarkColumn": "@item().WatermarkColumn",
+						"LastLoadValue": "@item().LastLoadValue"
+					}
 				}
 			}
 		],

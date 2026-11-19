@@ -5,6 +5,14 @@
 			"referenceName": "LS_Parent_SqlServer_DW",
 			"type": "LinkedServiceReference"
 		},
+		"parameters": {
+			"@dataset().schemaname": {
+				"type": "string"
+			},
+			"@dataset().tablename": {
+				"type": "string"
+			}
+		},
 		"annotations": [],
 		"type": "SqlServerTable",
 		"schema": [],
