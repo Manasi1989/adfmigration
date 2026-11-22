@@ -7,12 +7,12 @@
 		"type": "SqlServer",
 		"typeProperties": {
 			"server": "DESKTOP-UU85IL7\\SQLEXPRESS",
-			"database": "Practicedata",
+			"database": "sqlmigration",
 			"encrypt": "mandatory",
 			"trustServerCertificate": true,
 			"authenticationType": "SQL",
 			"userName": "Manasi",
-			"encryptedCredential": "eyJDcmVkZW50aWFsSWQiOiJmNTc3ZjFiNy0zZjNiLTRkODItOGFjYy1lYWFkNTViYjE0NmUiLCJWZXJzaW9uIjoiMi4wIiwiQ2xhc3NUeXBlIjoiTWljcm9zb2Z0LkRhdGFQcm94eS5Db3JlLkludGVyU2VydmljZURhdGFDb250cmFjdC5DcmVkZW50aWFsU1UwNkNZMTQifQ=="
+			"encryptedCredential": "eyJDcmVkZW50aWFsSWQiOiI0NWE0NjdhYi02OGVmLTRjZjUtOTI2MS1lMjMxODBjODFmZjUiLCJWZXJzaW9uIjoiMi4wIiwiQ2xhc3NUeXBlIjoiTWljcm9zb2Z0LkRhdGFQcm94eS5Db3JlLkludGVyU2VydmljZURhdGFDb250cmFjdC5DcmVkZW50aWFsU1UwNkNZMTQifQ=="
 		},
 		"connectVia": {
 			"referenceName": "integrationRuntime1",
