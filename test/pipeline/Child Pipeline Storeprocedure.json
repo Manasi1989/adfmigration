@@ -4,7 +4,7 @@
 		"activities": [
 			{
 				"name": "SP_UPDT_WTRMRK",
-				"type": "Copy",
+				"type": "SqlServerStoredProcedure",
 				"dependsOn": [],
 				"policy": {
 					"timeout": "0.12:00:00",
@@ -15,59 +15,25 @@
 				},
 				"userProperties": [],
 				"typeProperties": {
-					"source": {
-						"type": "ParquetSource",
-						"storeSettings": {
-							"type": "AzureBlobFSReadSettings",
-							"recursive": true,
-							"enablePartitionDiscovery": false
-						},
-						"formatSettings": {
-							"type": "ParquetReadSettings"
-						}
-					},
-					"sink": {
-						"type": "ParquetSink",
-						"storeSettings": {
-							"type": "AzureBlobFSWriteSettings"
-						},
-						"formatSettings": {
-							"type": "ParquetWriteSettings"
-						}
-					},
-					"enableStaging": false,
-					"translator": {
-						"type": "TabularTranslator",
-						"typeConversion": true,
-						"typeConversionSettings": {
-							"allowDataTruncation": true,
-							"treatBooleanAsNumber": false
-						}
-					}
+					"storedProcedureName": "[dbo].[UpdateWatermark]"
 				},
-				"inputs": [
-					{
-						"referenceName": "DS_ADLS_Parquet1",
-						"type": "DatasetReference",
-						"parameters": {
-							"Table_Name": {
-								"value": "@pipeline().parameters.TableName",
-								"type": "Expression"
-							}
-						}
-					}
-				],
-				"outputs": [
-					{
-						"referenceName": "DS_ADLS_Parquet1",
-						"type": "DatasetReference",
-						"parameters": {
-							"Table_Name": "@pipeline().parameters.TableName"
-						}
-					}
-				]
+				"linkedServiceName": {
+					"referenceName": "LS_SQL_MIGRATION",
+					"type": "LinkedServiceReference"
+				}
 			}
 		],
+		"parameters": {
+			"TableSchema": {
+				"type": "string"
+			},
+			"TableName": {
+				"type": "string"
+			},
+			"WatermarkColumn": {
+				"type": "string"
+			}
+		},
 		"annotations": []
 	}
 }
