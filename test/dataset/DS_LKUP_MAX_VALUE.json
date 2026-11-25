@@ -6,10 +6,10 @@
 			"type": "LinkedServiceReference"
 		},
 		"parameters": {
-			"@dataset().schemaname": {
+			"schemaname": {
 				"type": "string"
 			},
-			"@dataset().tablename": {
+			"tablename": {
 				"type": "string"
 			}
 		},
