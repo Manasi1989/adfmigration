@@ -1,0 +1,20 @@
+{
+	"name": "pipeline3",
+	"properties": {
+		"parameters": {
+			"TableSchema": {
+				"type": "string",
+				"defaultValue": "@pipeline().parameters.TableSchema"
+			},
+			"TableName": {
+				"type": "string",
+				"defaultValue": "@pipeline().parameters.TableName"
+			},
+			"WatermarkColumn": {
+				"type": "string",
+				"defaultValue": "@pipeline().parameters.WatermarkColumn"
+			}
+		},
+		"annotations": []
+	}
+}
