@@ -310,8 +310,7 @@
 				},
 				"parameters": {
 					"Table_Name": {
-						"type": "string",
-						"defaultValue": "@pipeline().parameters.TableName"
+						"type": "string"
 					}
 				},
 				"annotations": [],
