@@ -419,16 +419,13 @@
 				},
 				"parameters": {
 					"TableSchema": {
-						"type": "string",
-						"defaultValue": "@pipeline().paramenters.TableSchema"
+						"type": "string"
 					},
 					"TableName": {
-						"type": "string",
-						"defaultValue": "@pipeline().paramenters.TableName"
+						"type": "string"
 					},
 					"WatermarkColumn": {
-						"type": "string",
-						"defaultValue": "@pipeline().paramenters.WatermarkColumn"
+						"type": "string"
 					}
 				},
 				"annotations": []
