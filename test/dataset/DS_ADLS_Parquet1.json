@@ -7,7 +7,8 @@
 		},
 		"parameters": {
 			"Table_Name": {
-				"type": "string"
+				"type": "string",
+				"defaultValue": "@pipeline().parameters.TableName"
 			}
 		},
 		"annotations": [],
@@ -15,8 +16,6 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
-				"fileName": "@concat(dataset().Table_Name,'_',formatDateTime(utcNow(),'yyyyMMddHHmmss'),'.parquet')",
-				"folderPath": "@concat(dataset().Table_Name,'/',formatDateTime(utcNow(),'yyyy/MM/dd’))",
 				"fileSystem": "target"
 			},
 			"compressionCodec": "snappy"
