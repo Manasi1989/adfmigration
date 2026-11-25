@@ -60,7 +60,10 @@
 				"outputs": [
 					{
 						"referenceName": "DS_ADLS_Parquet1",
-						"type": "DatasetReference"
+						"type": "DatasetReference",
+						"parameters": {
+							"Table_Name": "@pipeline().parameters.TableName"
+						}
 					}
 				]
 			}
