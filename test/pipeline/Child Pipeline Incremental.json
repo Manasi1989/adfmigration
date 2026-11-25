@@ -148,7 +148,7 @@
 							"userProperties": [],
 							"typeProperties": {
 								"pipeline": {
-									"referenceName": "pipeline4",
+									"referenceName": "Child Pipeline Storeprocedure",
 									"type": "PipelineReference"
 								},
 								"waitOnCompletion": true
