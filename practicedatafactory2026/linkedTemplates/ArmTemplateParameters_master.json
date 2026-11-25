@@ -8,6 +8,9 @@
 		"ADLS_SQL_PARQUET_password": {
 			"value": ""
 		},
+		"LS_ADLS_Parquet1_accountKey": {
+			"value": ""
+		},
 		"LS_BULKOUTPUT_accountKey": {
 			"value": ""
 		},
@@ -41,9 +44,6 @@
 		"SqlServer2_password": {
 			"value": ""
 		},
-		"LS_ADLS_Parquet1_accountKey": {
-			"value": ""
-		},
 		"ADLS_SQL_PARQUET_properties_typeProperties_server": {
 			"value": "DESKTOP-UU85IL7\\SQLEXPRESS"
 		},
@@ -52,6 +52,9 @@
 		},
 		"ADLS_SQL_PARQUET_properties_typeProperties_userName": {
 			"value": "Manasi"
+		},
+		"LS_ADLS_Parquet1_properties_typeProperties_url": {
+			"value": "https://adlsdevmanproject.dfs.core.windows.net/"
 		},
 		"LS_BULKOUTPUT_properties_typeProperties_url": {
 			"value": "https://adlsdevcsvouttrigger1989.dfs.core.windows.net/"
@@ -124,9 +127,6 @@
 		},
 		"EVENTTRIGGER_MANUALFILES_properties_typeProperties_scope": {
 			"value": "/subscriptions/be8307e2-f2ae-4452-b7b6-002736b921d5/resourceGroups/rg_devmanproject/providers/Microsoft.Storage/storageAccounts/adlsdevcsvtrigger1989"
-		},
-		"LS_ADLS_Parquet1_properties_typeProperties_url": {
-			"value": "https://adlsdevmanproject.dfs.core.windows.net/"
 		},
 		"containerUri": {
 			"value": ""

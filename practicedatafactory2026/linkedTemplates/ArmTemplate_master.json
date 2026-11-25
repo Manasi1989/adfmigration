@@ -11,6 +11,10 @@
 			"type": "secureString",
 			"metadata": "Secure string for 'password' of 'ADLS_SQL_PARQUET'"
 		},
+		"LS_ADLS_Parquet1_accountKey": {
+			"type": "secureString",
+			"metadata": "Secure string for 'accountKey' of 'LS_ADLS_Parquet1'"
+		},
 		"LS_BULKOUTPUT_accountKey": {
 			"type": "secureString",
 			"metadata": "Secure string for 'accountKey' of 'LS_BULKOUTPUT'"
@@ -55,10 +59,6 @@
 			"type": "secureString",
 			"metadata": "Secure string for 'password' of 'SqlServer2'"
 		},
-		"LS_ADLS_Parquet1_accountKey": {
-			"type": "secureString",
-			"metadata": "Secure string for 'accountKey' of 'LS_ADLS_Parquet1'"
-		},
 		"ADLS_SQL_PARQUET_properties_typeProperties_server": {
 			"type": "string",
 			"defaultValue": "DESKTOP-UU85IL7\\SQLEXPRESS"
@@ -70,6 +70,10 @@
 		"ADLS_SQL_PARQUET_properties_typeProperties_userName": {
 			"type": "string",
 			"defaultValue": "Manasi"
+		},
+		"LS_ADLS_Parquet1_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://adlsdevmanproject.dfs.core.windows.net/"
 		},
 		"LS_BULKOUTPUT_properties_typeProperties_url": {
 			"type": "string",
@@ -167,10 +171,6 @@
 			"type": "string",
 			"defaultValue": "/subscriptions/be8307e2-f2ae-4452-b7b6-002736b921d5/resourceGroups/rg_devmanproject/providers/Microsoft.Storage/storageAccounts/adlsdevcsvtrigger1989"
 		},
-		"LS_ADLS_Parquet1_properties_typeProperties_url": {
-			"type": "string",
-			"defaultValue": "https://adlsdevmanproject.dfs.core.windows.net/"
-		},
 		"containerUri": {
 			"type": "string",
 			"metadata": "URI to storage account containing linked ARM templates"
@@ -198,6 +198,9 @@
 					"factoryName": {
 						"value": "[parameters('factoryName')]"
 					},
+					"LS_ADLS_Parquet1_accountKey": {
+						"value": "[parameters('LS_ADLS_Parquet1_accountKey')]"
+					},
 					"LS_BULKOUTPUT_accountKey": {
 						"value": "[parameters('LS_BULKOUTPUT_accountKey')]"
 					},
@@ -212,9 +215,6 @@
 					},
 					"LS_MANUALFILE_PARQUET_accountKey": {
 						"value": "[parameters('LS_MANUALFILE_PARQUET_accountKey')]"
-					},
-					"LS_ADLS_Parquet1_accountKey": {
-						"value": "[parameters('LS_ADLS_Parquet1_accountKey')]"
 					},
 					"ADLS_SQL_PARQUET_password": {
 						"value": "[parameters('ADLS_SQL_PARQUET_password')]"
@@ -231,6 +231,9 @@
 					"LS_SQL_MIGRATION_password": {
 						"value": "[parameters('LS_SQL_MIGRATION_password')]"
 					},
+					"LS_ADLS_Parquet1_properties_typeProperties_url": {
+						"value": "[parameters('LS_ADLS_Parquet1_properties_typeProperties_url')]"
+					},
 					"LS_BULKOUTPUT_properties_typeProperties_url": {
 						"value": "[parameters('LS_BULKOUTPUT_properties_typeProperties_url')]"
 					},
@@ -245,9 +248,6 @@
 					},
 					"LS_MANUALFILE_PARQUET_properties_typeProperties_url": {
 						"value": "[parameters('LS_MANUALFILE_PARQUET_properties_typeProperties_url')]"
-					},
-					"LS_ADLS_Parquet1_properties_typeProperties_url": {
-						"value": "[parameters('LS_ADLS_Parquet1_properties_typeProperties_url')]"
 					},
 					"ADLS_SQL_PARQUET_properties_typeProperties_server": {
 						"value": "[parameters('ADLS_SQL_PARQUET_properties_typeProperties_server')]"
