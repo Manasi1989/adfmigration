@@ -20,7 +20,16 @@
 		"LS_EVENTFILES_accountKey": {
 			"value": ""
 		},
+		"LS_LKUP_MAX_VALUE_password": {
+			"value": ""
+		},
 		"LS_MANUALFILE_PARQUET_accountKey": {
+			"value": ""
+		},
+		"LS_Parent_SqlServer_DW_password": {
+			"value": ""
+		},
+		"LS_SQLSERVER_TBLLKUP_password": {
 			"value": ""
 		},
 		"LS_SQL_MIGRATION_password": {
@@ -30,6 +39,9 @@
 			"value": ""
 		},
 		"SqlServer2_password": {
+			"value": ""
+		},
+		"LS_ADLS_Parquet1_accountKey": {
 			"value": ""
 		},
 		"ADLS_SQL_PARQUET_properties_typeProperties_server": {
@@ -53,8 +65,35 @@
 		"LS_EVENTFILES_properties_typeProperties_url": {
 			"value": "https://adlsdevcsvtrigger1989.dfs.core.windows.net/"
 		},
+		"LS_LKUP_MAX_VALUE_properties_typeProperties_server": {
+			"value": "DESKTOP-UU85IL7\\SQLEXPRESS"
+		},
+		"LS_LKUP_MAX_VALUE_properties_typeProperties_database": {
+			"value": "Practicedata"
+		},
+		"LS_LKUP_MAX_VALUE_properties_typeProperties_userName": {
+			"value": "Manasi"
+		},
 		"LS_MANUALFILE_PARQUET_properties_typeProperties_url": {
 			"value": "https://adlsdevcsvouttrigger1989.dfs.core.windows.net/"
+		},
+		"LS_Parent_SqlServer_DW_properties_typeProperties_server": {
+			"value": "DESKTOP-UU85IL7\\SQLEXPRESS"
+		},
+		"LS_Parent_SqlServer_DW_properties_typeProperties_database": {
+			"value": "sqlmigration"
+		},
+		"LS_Parent_SqlServer_DW_properties_typeProperties_userName": {
+			"value": "Manasi"
+		},
+		"LS_SQLSERVER_TBLLKUP_properties_typeProperties_server": {
+			"value": "DESKTOP-UU85IL7\\SQLEXPRESS"
+		},
+		"LS_SQLSERVER_TBLLKUP_properties_typeProperties_database": {
+			"value": "sqlmigration"
+		},
+		"LS_SQLSERVER_TBLLKUP_properties_typeProperties_userName": {
+			"value": "Manasi"
 		},
 		"LS_SQL_MIGRATION_properties_typeProperties_server": {
 			"value": "DESKTOP-UU85IL7\\SQLEXPRESS"
@@ -85,6 +124,9 @@
 		},
 		"EVENTTRIGGER_MANUALFILES_properties_typeProperties_scope": {
 			"value": "/subscriptions/be8307e2-f2ae-4452-b7b6-002736b921d5/resourceGroups/rg_devmanproject/providers/Microsoft.Storage/storageAccounts/adlsdevcsvtrigger1989"
+		},
+		"LS_ADLS_Parquet1_properties_typeProperties_url": {
+			"value": "https://adlsdevmanproject.dfs.core.windows.net/"
 		}
 	}
 }

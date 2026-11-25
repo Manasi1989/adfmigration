@@ -27,9 +27,21 @@
 			"type": "secureString",
 			"metadata": "Secure string for 'accountKey' of 'LS_EVENTFILES'"
 		},
+		"LS_LKUP_MAX_VALUE_password": {
+			"type": "secureString",
+			"metadata": "Secure string for 'password' of 'LS_LKUP_MAX_VALUE'"
+		},
 		"LS_MANUALFILE_PARQUET_accountKey": {
 			"type": "secureString",
 			"metadata": "Secure string for 'accountKey' of 'LS_MANUALFILE_PARQUET'"
+		},
+		"LS_Parent_SqlServer_DW_password": {
+			"type": "secureString",
+			"metadata": "Secure string for 'password' of 'LS_Parent_SqlServer_DW'"
+		},
+		"LS_SQLSERVER_TBLLKUP_password": {
+			"type": "secureString",
+			"metadata": "Secure string for 'password' of 'LS_SQLSERVER_TBLLKUP'"
 		},
 		"LS_SQL_MIGRATION_password": {
 			"type": "secureString",
@@ -42,6 +54,10 @@
 		"SqlServer2_password": {
 			"type": "secureString",
 			"metadata": "Secure string for 'password' of 'SqlServer2'"
+		},
+		"LS_ADLS_Parquet1_accountKey": {
+			"type": "secureString",
+			"metadata": "Secure string for 'accountKey' of 'LS_ADLS_Parquet1'"
 		},
 		"ADLS_SQL_PARQUET_properties_typeProperties_server": {
 			"type": "string",
@@ -71,9 +87,45 @@
 			"type": "string",
 			"defaultValue": "https://adlsdevcsvtrigger1989.dfs.core.windows.net/"
 		},
+		"LS_LKUP_MAX_VALUE_properties_typeProperties_server": {
+			"type": "string",
+			"defaultValue": "DESKTOP-UU85IL7\\SQLEXPRESS"
+		},
+		"LS_LKUP_MAX_VALUE_properties_typeProperties_database": {
+			"type": "string",
+			"defaultValue": "Practicedata"
+		},
+		"LS_LKUP_MAX_VALUE_properties_typeProperties_userName": {
+			"type": "string",
+			"defaultValue": "Manasi"
+		},
 		"LS_MANUALFILE_PARQUET_properties_typeProperties_url": {
 			"type": "string",
 			"defaultValue": "https://adlsdevcsvouttrigger1989.dfs.core.windows.net/"
+		},
+		"LS_Parent_SqlServer_DW_properties_typeProperties_server": {
+			"type": "string",
+			"defaultValue": "DESKTOP-UU85IL7\\SQLEXPRESS"
+		},
+		"LS_Parent_SqlServer_DW_properties_typeProperties_database": {
+			"type": "string",
+			"defaultValue": "sqlmigration"
+		},
+		"LS_Parent_SqlServer_DW_properties_typeProperties_userName": {
+			"type": "string",
+			"defaultValue": "Manasi"
+		},
+		"LS_SQLSERVER_TBLLKUP_properties_typeProperties_server": {
+			"type": "string",
+			"defaultValue": "DESKTOP-UU85IL7\\SQLEXPRESS"
+		},
+		"LS_SQLSERVER_TBLLKUP_properties_typeProperties_database": {
+			"type": "string",
+			"defaultValue": "sqlmigration"
+		},
+		"LS_SQLSERVER_TBLLKUP_properties_typeProperties_userName": {
+			"type": "string",
+			"defaultValue": "Manasi"
 		},
 		"LS_SQL_MIGRATION_properties_typeProperties_server": {
 			"type": "string",
@@ -114,6 +166,10 @@
 		"EVENTTRIGGER_MANUALFILES_properties_typeProperties_scope": {
 			"type": "string",
 			"defaultValue": "/subscriptions/be8307e2-f2ae-4452-b7b6-002736b921d5/resourceGroups/rg_devmanproject/providers/Microsoft.Storage/storageAccounts/adlsdevcsvtrigger1989"
+		},
+		"LS_ADLS_Parquet1_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://adlsdevmanproject.dfs.core.windows.net/"
 		},
 		"containerUri": {
 			"type": "string",
@@ -157,17 +213,23 @@
 					"LS_MANUALFILE_PARQUET_accountKey": {
 						"value": "[parameters('LS_MANUALFILE_PARQUET_accountKey')]"
 					},
+					"LS_ADLS_Parquet1_accountKey": {
+						"value": "[parameters('LS_ADLS_Parquet1_accountKey')]"
+					},
 					"ADLS_SQL_PARQUET_password": {
 						"value": "[parameters('ADLS_SQL_PARQUET_password')]"
 					},
+					"LS_LKUP_MAX_VALUE_password": {
+						"value": "[parameters('LS_LKUP_MAX_VALUE_password')]"
+					},
+					"LS_Parent_SqlServer_DW_password": {
+						"value": "[parameters('LS_Parent_SqlServer_DW_password')]"
+					},
+					"LS_SQLSERVER_TBLLKUP_password": {
+						"value": "[parameters('LS_SQLSERVER_TBLLKUP_password')]"
+					},
 					"LS_SQL_MIGRATION_password": {
 						"value": "[parameters('LS_SQL_MIGRATION_password')]"
-					},
-					"SqlServer1_password": {
-						"value": "[parameters('SqlServer1_password')]"
-					},
-					"SqlServer2_password": {
-						"value": "[parameters('SqlServer2_password')]"
 					},
 					"LS_BULKOUTPUT_properties_typeProperties_url": {
 						"value": "[parameters('LS_BULKOUTPUT_properties_typeProperties_url')]"
@@ -184,6 +246,9 @@
 					"LS_MANUALFILE_PARQUET_properties_typeProperties_url": {
 						"value": "[parameters('LS_MANUALFILE_PARQUET_properties_typeProperties_url')]"
 					},
+					"LS_ADLS_Parquet1_properties_typeProperties_url": {
+						"value": "[parameters('LS_ADLS_Parquet1_properties_typeProperties_url')]"
+					},
 					"ADLS_SQL_PARQUET_properties_typeProperties_server": {
 						"value": "[parameters('ADLS_SQL_PARQUET_properties_typeProperties_server')]"
 					},
@@ -193,6 +258,33 @@
 					"ADLS_SQL_PARQUET_properties_typeProperties_userName": {
 						"value": "[parameters('ADLS_SQL_PARQUET_properties_typeProperties_userName')]"
 					},
+					"LS_LKUP_MAX_VALUE_properties_typeProperties_server": {
+						"value": "[parameters('LS_LKUP_MAX_VALUE_properties_typeProperties_server')]"
+					},
+					"LS_LKUP_MAX_VALUE_properties_typeProperties_database": {
+						"value": "[parameters('LS_LKUP_MAX_VALUE_properties_typeProperties_database')]"
+					},
+					"LS_LKUP_MAX_VALUE_properties_typeProperties_userName": {
+						"value": "[parameters('LS_LKUP_MAX_VALUE_properties_typeProperties_userName')]"
+					},
+					"LS_Parent_SqlServer_DW_properties_typeProperties_server": {
+						"value": "[parameters('LS_Parent_SqlServer_DW_properties_typeProperties_server')]"
+					},
+					"LS_Parent_SqlServer_DW_properties_typeProperties_database": {
+						"value": "[parameters('LS_Parent_SqlServer_DW_properties_typeProperties_database')]"
+					},
+					"LS_Parent_SqlServer_DW_properties_typeProperties_userName": {
+						"value": "[parameters('LS_Parent_SqlServer_DW_properties_typeProperties_userName')]"
+					},
+					"LS_SQLSERVER_TBLLKUP_properties_typeProperties_server": {
+						"value": "[parameters('LS_SQLSERVER_TBLLKUP_properties_typeProperties_server')]"
+					},
+					"LS_SQLSERVER_TBLLKUP_properties_typeProperties_database": {
+						"value": "[parameters('LS_SQLSERVER_TBLLKUP_properties_typeProperties_database')]"
+					},
+					"LS_SQLSERVER_TBLLKUP_properties_typeProperties_userName": {
+						"value": "[parameters('LS_SQLSERVER_TBLLKUP_properties_typeProperties_userName')]"
+					},
 					"LS_SQL_MIGRATION_properties_typeProperties_server": {
 						"value": "[parameters('LS_SQL_MIGRATION_properties_typeProperties_server')]"
 					},
@@ -201,24 +293,6 @@
 					},
 					"LS_SQL_MIGRATION_properties_typeProperties_userName": {
 						"value": "[parameters('LS_SQL_MIGRATION_properties_typeProperties_userName')]"
-					},
-					"SqlServer1_properties_typeProperties_server": {
-						"value": "[parameters('SqlServer1_properties_typeProperties_server')]"
-					},
-					"SqlServer1_properties_typeProperties_database": {
-						"value": "[parameters('SqlServer1_properties_typeProperties_database')]"
-					},
-					"SqlServer1_properties_typeProperties_userName": {
-						"value": "[parameters('SqlServer1_properties_typeProperties_userName')]"
-					},
-					"SqlServer2_properties_typeProperties_server": {
-						"value": "[parameters('SqlServer2_properties_typeProperties_server')]"
-					},
-					"SqlServer2_properties_typeProperties_database": {
-						"value": "[parameters('SqlServer2_properties_typeProperties_database')]"
-					},
-					"SqlServer2_properties_typeProperties_userName": {
-						"value": "[parameters('SqlServer2_properties_typeProperties_userName')]"
 					}
 				}
 			},
@@ -237,6 +311,30 @@
 				"parameters": {
 					"factoryName": {
 						"value": "[parameters('factoryName')]"
+					},
+					"SqlServer1_password": {
+						"value": "[parameters('SqlServer1_password')]"
+					},
+					"SqlServer2_password": {
+						"value": "[parameters('SqlServer2_password')]"
+					},
+					"SqlServer1_properties_typeProperties_server": {
+						"value": "[parameters('SqlServer1_properties_typeProperties_server')]"
+					},
+					"SqlServer1_properties_typeProperties_database": {
+						"value": "[parameters('SqlServer1_properties_typeProperties_database')]"
+					},
+					"SqlServer1_properties_typeProperties_userName": {
+						"value": "[parameters('SqlServer1_properties_typeProperties_userName')]"
+					},
+					"SqlServer2_properties_typeProperties_server": {
+						"value": "[parameters('SqlServer2_properties_typeProperties_server')]"
+					},
+					"SqlServer2_properties_typeProperties_database": {
+						"value": "[parameters('SqlServer2_properties_typeProperties_database')]"
+					},
+					"SqlServer2_properties_typeProperties_userName": {
+						"value": "[parameters('SqlServer2_properties_typeProperties_userName')]"
 					},
 					"EVENTTRIGGER_MANUALFILES_properties_typeProperties_scope": {
 						"value": "[parameters('EVENTTRIGGER_MANUALFILES_properties_typeProperties_scope')]"
