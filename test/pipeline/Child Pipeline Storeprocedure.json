@@ -3,7 +3,7 @@
 	"properties": {
 		"activities": [
 			{
-				"name": "Wait1",
+				"name": "SP_UPDT_WTRMRK",
 				"type": "Wait",
 				"dependsOn": [],
 				"userProperties": [],
