@@ -243,10 +243,12 @@
 				},
 				"parameters": {
 					"schemaname": {
-						"type": "string"
+						"type": "string",
+						"defaultValue": "@pipeline().parameters.SchemaName"
 					},
 					"tablename": {
-						"type": "string"
+						"type": "string",
+						"defaultValue": "@pipeline().parameters.TableName"
 					}
 				},
 				"annotations": [],
@@ -629,7 +631,6 @@
 								"value": "@activity('LKUP_SQLTABLE_WATERMARK DW').output.value",
 								"type": "Expression"
 							},
-							"isSequential": false,
 							"activities": [
 								{
 									"name": "EXEC_SQL_INCREMENTAL",
