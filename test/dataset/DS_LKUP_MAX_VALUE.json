@@ -7,12 +7,10 @@
 		},
 		"parameters": {
 			"schemaname": {
-				"type": "string",
-				"defaultValue": "@pipeline().parameters.SchemaName"
+				"type": "string"
 			},
 			"tablename": {
-				"type": "string",
-				"defaultValue": "@pipeline().parameters.TableName"
+				"type": "string"
 			}
 		},
 		"annotations": [],
